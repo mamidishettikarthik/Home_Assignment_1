@@ -1,9 +1,9 @@
-#blue {
+#header{
     background-color: rgb(4, 4, 90);
     height: 105px;
     display: flex;
 }
-#gray {
+#headerMiddle{
     font-family: Verdana, sans-serif;
     text-align: center;
     margin: auto;
@@ -12,16 +12,16 @@
     background-color: white;
     border: 1.5px solid red;
 }
-#blue-box {
+#headerMiddle-text-one {
     margin: 0%;
     padding: 0%;
     font-size: 20px;
 }
-#gray-box {
+#headerMiddle-text-two {
     font-size: 10px;
     font-weight: bold;
 }
-.container{
+.content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -29,7 +29,7 @@
     display: grid;
     grid-template-rows:0px 0px;
 }
-#allnews{
+#contentMiddle{
     font-size: 35px;
     display: grid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -37,24 +37,24 @@
     position:relative;
     margin-bottom: 4%;
 }
-.subscribe{
+.contentRight-text{
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight:bold;
     margin-top: 2%;
 }
-.email_address{
+.contentRight-eventBox{
     width: 130px;
     margin-top: 9%;
 }
-.subscribe_click{
+.linkBox{
     font-size: 12.5px;
     position: relative;top:41.5%;
     right: -33.5%;
     background-color: black;
     color: white;
 }
-#select_category{
+#content-left-text{
     font-size: 18px;
     font-family:'Poppins', sans-serif;
     font-weight:bold;
@@ -63,11 +63,11 @@
     padding-top: 2%;
     padding-left: 4%;
 }
-#custom-select {
+#drop-box{
     margin-left: 4%;
     width: 26%;
 }
-.News_Article{
+.page-content{
     margin: 15px auto;
     width: auto;
     height: 10%;
@@ -84,7 +84,7 @@ img{
     margin-top: 0%;
 
 }
-.text{
+.page-content-text{
     text-align: justify;
 }
 .button {
@@ -107,15 +107,15 @@ img{
     margin-bottom:0%;
   }
   @media screen and (max-width: 1000px){
-    .subscribe_click{
+    .page-content-text{
         font-size: 5px;
     }
-    .email_address{
+    .contentRight-eventBox{
         width: 40px;
         size: 1px;
         
     }
-    .subscribe{
+    .linkBox{
         font-size: 10px;
     }
   }
@@ -128,31 +128,25 @@ img{
         margin-bottom: 6%;
 
     }
-    .title{
-        font-size: 20px;
-        position:relative; left:0px; top:15px; 
-        width:150px;
-        height: 150px;
-        margin-bottom: 6%;
-
-    }
     img{
         width:150px;
         height: 150px;
+    }
+    .linkBox{
+        font-size: 5px;
     }
   }
   @media screen and (max-width:380px) {
-    #blue{
+    #header{
         width: 100%;
     }
-    #select_category{
+    #content-left-text{
         font-size: 12px;
     }
-    #allnews{
+    #contentMiddle{
         width: 10%;
     }
-    #custom-select{
-        
+    #drop-box{
         margin-left: 10%;
     }
     .title{
@@ -167,40 +161,41 @@ img{
         width:150px;
         height: 150px;
     }
+    #contentRight-text{
+        
+        margin-left: 2%;
+    }
+    
 
   }
   @media screen and (max-width: 991px) {
-    #allnews{
+    #contentMiddle{
         font-size: 15px;
 
     }
-    #custom-select{
+    #contentRight-text{
         
         margin-left: 10%;
     }
-    #custom-select{
-        
-        margin-left: 10%;
-    }
-    #select_category{
+    #content-left-text{
         font-size: 12px;
     }
-    #subscribe{
-        font-size: 10px;
+    #contentRight-text{
+        font-size: 5px;
         margin-left: 40%;
     }
 }
   @media screen and (max-width: 520px) {
-    #bluebox {
+    #headerMiddle-text-one {
         font-size: 10px;
     }
-    #graybox {
+    #headerMiddle-text-two {
         font-size: 5px;
     }
-    #select_category{
+    #content-left-text{
         font-size: 8px;
     }
-    #allnews{
+    #contentMiddle{
         font-size: 10px;
     }
 }
