@@ -12,20 +12,20 @@
     background-color: white;
     border: 1.5px solid red;
 }
-#bluebox {
+#blue-box {
     margin: 0%;
     padding: 0%;
     font-size: 20px;
 }
-#graybox {
+#gray-box {
     font-size: 10px;
     font-weight: bold;
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.Container_One{
+.contentRight{
     display: grid;
     grid-template-rows:0px 0px;
 }
